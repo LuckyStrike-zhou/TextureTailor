@@ -6,6 +6,12 @@
 - 支持主流plist和png纹理文件裁剪，支持format2和3(可查看plist文件中metadata字典中的format关键词)
 - 支持目录内批量处理，导出为当前工作区的同名文件夹
 
+
+
+**遇到操作问题或bug请issue作者，欢迎给个小⭐️⭐️**
+
+
+
 ## 预览
 
 ![WX20210125-212234@2x](screenshot/WX20210125-212234@2x.png)
@@ -21,7 +27,15 @@
 - Mac App：下载TextureTailor.dmg运行
 - 命令行：配置Python环境，使用`pip install -r requirements.txt`安装依赖库，执行`python3 TextureTailor.py`
 
-**Tips：**Mac App启动时有延迟，等待几秒后才能打开
+**Tips:** Mac App启动时有延迟，等待几秒后才能打开
+
+
+
+## ipa拆包游戏资源png无法裁剪问题：
+
+原因是因为苹果打包成ipa时，会使用Python的pngcrush库对png图片进行压缩优化，故图片文件头无法解析
+
+需要执行撤销优化的指令，具体操作请移步作者简书：[TextureTailor自制Plist碎图工具](https://www.jianshu.com/p/c486357f44ad)
 
 
 
@@ -113,3 +127,4 @@ Python初应用，开发过程中多有借鉴，鸣谢大佬：
 [[PlistDumper](https://github.com/qcdong2016/PlistDumper)](https://github.com/qcdong2016/PlistDumper)
 
 [[tp-png-split](https://github.com/ShawnZhang2015/tp-png-split)](https://github.com/ShawnZhang2015/tp-png-split)
+
