@@ -1,0 +1,2 @@
+# TextureTailor
+游戏图片纹理裁剪碎图工具，支持plist的format2和3格式
