@@ -6,6 +6,7 @@ import plistlib
 import os
 from PIL import Image  # tkinter也有Image, 所以后调用
 
+# pyinstaller -F -w TextureTailor.py
 
 def check_format(plist):
     fm = plist['metadata']['format']
